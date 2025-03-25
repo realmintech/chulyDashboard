@@ -1,10 +1,17 @@
+'use client'
 
-export default function Home() {
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import DashboardComp from "../components/DashboardComp";
+import Profile from "../components/Profile";
+
+export default function Home(): JSX.Element {
   return (
-   <>
-   <h1 className="text-5xl text-green-800">Good God</h1>
-   
-   
-   </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<DashboardComp />}>
+          <Route path="profile" element={<Profile />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
