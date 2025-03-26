@@ -12,7 +12,6 @@ const ProfileCard = () => {
           className="bg-white shadow-lg rounded-xl overflow-hidden"
           key={index}
         >
-          {/* Top Image */}
           <div className="relative w-full h-[180px]">
             <Image
               src={profile.img}
@@ -22,7 +21,6 @@ const ProfileCard = () => {
             />
           </div>
 
-          {/* Profile Image Overlay */}
           <div className="relative flex justify-center">
             <div className="absolute -top-12 w-24 h-24 rounded-full border-4 border-white overflow-hidden">
               <Image
@@ -35,7 +33,6 @@ const ProfileCard = () => {
             </div>
           </div>
 
-          {/* Profile Details */}
           <div className="text-center mt-6 px-6 pb-4">
             <div className="flex justify-between items-center">
               <div className="text-left">
@@ -55,12 +52,10 @@ const ProfileCard = () => {
               </div>
             </div>
 
-            {/* Profile Bio */}
             <p className="text-gray-600 text-sm mt-3 leading-relaxed">
               {profile.bio}
             </p>
 
-            {/* Buttons */}
             <div className="flex justify-between items-center mt-4">
               <button
                 className={`px-4 py-2 rounded-full text-white text-sm ${

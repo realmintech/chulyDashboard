@@ -33,9 +33,7 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Right Section: Notifications & Profile Picture */}
       <div className="flex items-center gap-4">
-        {/* Notification Icon with Badge */}
         <div className="relative">
           <Image
             src="/Alarm.png"
@@ -46,7 +44,6 @@ const Navbar = () => {
           />
         </div>
 
-        {/* Profile Picture */}
         <Image
           src="/travel-agent.png"
           width={40}
