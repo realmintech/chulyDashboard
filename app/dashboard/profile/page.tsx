@@ -5,7 +5,7 @@ import React from "react";
 const page = () => {
   return (
     <>
-      <section className="flex items-center flex-wrap justify-between p-4 w-full max-w-7xl">
+      <section className="flex items-center flex-wrap justify-between mx-6 md:mx-10 p-4 w-full max-w-3xl">
         <div className="flex items-center gap-4">
           <Image
             src="/travel-agent.png"
@@ -14,7 +14,6 @@ const page = () => {
             className="rounded-full"
             alt="Profile"
           />
-
           <div className="flex flex-col">
             <h1 className="text-lg font-semibold text-gray-900">
               Welcome, Temiloluwa
@@ -43,7 +42,7 @@ const page = () => {
           </select>
         </div>
       </section>
-      <section>
+      <section className="mx-8 md:mx-10">
         <ProfileCard />
       </section>
     </>

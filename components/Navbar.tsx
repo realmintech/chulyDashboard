@@ -6,21 +6,19 @@ import { FaSearch } from "react-icons/fa";
 const Navbar = () => {
   return (
     <nav className="flex items-center justify-between w-full px-6 py-3 bg-white border-r-2 shadow-sm">
-      <div className="flex items-center gap-4 py-2 px-16 ">
+      <div className="flex items-center gap-4 py-2 border-gray-600 pr-5 border-r">
         <Image src="/logo.png" width={60} height={60} alt="Logo" />
-
         <p className="font-[Jaini_Purva] text-[20px] text-gray-900">Chuly</p>
       </div>
-      <div className="flex items-center gap-3 flex-1 max-w-[300px] mx-auto">
+      <div className="items-center gap-3 flex-1 max-w-[300px] mx-auto hidden md:flex">
         <div className="relative w-full max-w-[200px]">
-          <input
+          <input         
             type="text"
             placeholder="Search"
             className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
           <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500" />
         </div>
-
         <button className="flex items-center gap-2 px-4 py-2 border rounded-full">
           <Image
             src="/Filter.png"

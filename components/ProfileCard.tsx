@@ -6,7 +6,7 @@ import { profiles } from "./data/profile";
 
 const ProfileCard = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-2">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
       {profiles.map((profile, index) => (
         <section
           className="bg-white shadow-lg rounded-xl overflow-hidden"
@@ -20,7 +20,6 @@ const ProfileCard = () => {
               alt="Profile Background"
             />
           </div>
-
           <div className="relative flex justify-center">
             <div className="absolute -top-12 w-24 h-24 rounded-full border-4 border-white overflow-hidden">
               <Image
@@ -32,8 +31,7 @@ const ProfileCard = () => {
               />
             </div>
           </div>
-
-          <div className="text-center mt-6 px-6 pb-4">
+          <div className="text-center mt-8 px-6 pb-4">
             <div className="flex justify-between items-center">
               <div className="text-left">
                 <h1 className="text-lg font-semibold">
@@ -51,11 +49,9 @@ const ProfileCard = () => {
                 )}
               </div>
             </div>
-
-            <p className="text-gray-600 text-sm mt-3 leading-relaxed">
+            <p className="text-gray-600 text-left line-clamp-4 text-sm mt-3 leading-relaxed">
               {profile.bio}
             </p>
-
             <div className="flex justify-between items-center mt-4">
               <button
                 className={`px-4 py-2 rounded-full text-white text-sm ${

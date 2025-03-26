@@ -12,13 +12,12 @@ const Sidebar = () => {
         <Image
           src="/travel-agent.png"
           className="rounded-full object-cover mb-4"
-          width={75}
-          height={75}
+          width={100}
+          height={100}
           alt="Profile Picture"
         />
         <h2 className="text-lg font-semibold text-gray-900">Temiloluwa</h2>
       </div>
-
       <div className="mt-6 w-full">
         <div className="flex items-center gap-4 w-full py-3 px-6 bg-red-500 text-white rounded-lg">
           <PiDotsNineBold className="text-lg" />
