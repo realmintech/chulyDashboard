@@ -6,12 +6,11 @@ import { FaSearch } from "react-icons/fa";
 const Navbar = () => {
   return (
     <nav className="flex items-center justify-between w-full px-6 py-3 bg-white border-r-2 shadow-sm">
-      <div className="flex items-center gap-4 bg-white shadow-md py-2 px-16 ">
+      <div className="flex items-center gap-4 py-2 px-16 ">
         <Image src="/logo.png" width={60} height={60} alt="Logo" />
 
         <p className="font-[Jaini_Purva] text-[20px] text-gray-900">Chuly</p>
       </div>
-
       <div className="flex items-center gap-3 flex-1 max-w-[300px] mx-auto">
         <div className="relative w-full max-w-[200px]">
           <input

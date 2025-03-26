@@ -2,6 +2,7 @@ export const datas = [
   {
     img: "/Heart.png",
     text: "My Profile",
+    href: 'profile'
   },
   {
     img: "/MaleUser.png",
