@@ -3,7 +3,6 @@
 import { FiEdit2 } from "react-icons/fi";
 import Image from "next/image";
 
-type Category = "Hobbies" | "Interests" | "AboutMe";
 type ColorMapping = Record<string, string>;
 
 const colorMapping: ColorMapping = {
