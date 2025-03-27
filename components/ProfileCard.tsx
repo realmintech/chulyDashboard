@@ -9,8 +9,8 @@ const ProfileCard = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
       {profiles.map((profile, index) => (
         <section
-          className="bg-white shadow-lg rounded-xl overflow-hidden"
           key={index}
+          className="bg-white shadow-lg rounded-xl overflow-hidden flex flex-col h-full"
         >
           <div className="relative w-full h-[180px]">
             <Image
@@ -20,8 +20,9 @@ const ProfileCard = () => {
               alt="Profile Background"
             />
           </div>
+
           <div className="relative flex justify-center">
-            <div className="absolute -top-12 w-24 h-24 rounded-full border-4 border-white overflow-hidden">
+            <div className="absolute -top-12 w-24 h-24 rounded-full  overflow-hidden">
               <Image
                 src={profile.avatar}
                 width={96}
@@ -31,7 +32,8 @@ const ProfileCard = () => {
               />
             </div>
           </div>
-          <div className="text-center mt-8 px-6 pb-4">
+
+          <div className="flex flex-col flex-grow text-center mt-8 px-6 pb-4">
             <div className="flex justify-between items-center">
               <div className="text-left">
                 <h1 className="text-lg font-semibold">
@@ -49,19 +51,21 @@ const ProfileCard = () => {
                 )}
               </div>
             </div>
-            <p className="text-gray-600 text-left line-clamp-4 text-sm mt-3 leading-relaxed">
+
+            <p className="text-gray-600 text-left line-clamp-4 text-sm mt-3 leading-relaxed flex-grow">
               {profile.bio}
             </p>
-            <div className="flex justify-between items-center mt-4">
+
+            <div className="flex justify-between items-center mt-4 pt-4">
               <button
                 className={`px-4 py-2 rounded-full text-white text-sm ${
-                  profile.btnType === "red" ? "bg-red-500" : "bg-green-500"
+                  profile.btnType === "red" ? "bg-red-500" : "bg-[#00A389]"
                 }`}
               >
                 {profile.btnText}
               </button>
               <button>
-                <CiHeart className="cursor-pointer text-3xl" />
+                <CiHeart className="cursor-pointer text-3xl text-gray-500 hover:text-red-500" />
               </button>
             </div>
           </div>

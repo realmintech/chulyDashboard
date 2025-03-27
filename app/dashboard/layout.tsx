@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Sidebar from "@/components/Sidebar";
-import { FiMenu } from "react-icons/fi"; 
+import { FiMenu } from "react-icons/fi";
+import { FaTimes } from "react-icons/fa";
 
 export default function DashboardLayout({
   children,
@@ -22,10 +23,10 @@ export default function DashboardLayout({
         <aside className="fixed left-0 w-[284px] bg-white shadow-lg z-50">
           <Sidebar />
           <button
-            className="absolute top-4 right-4 text-gray-600"
+            className="absolute top-4 right-4 text-black"
             onClick={() => setIsSidebarOpen(false)}
           >
-            ✖
+            <FaTimes />
           </button>
         </aside>
       )}
